@@ -17,7 +17,7 @@ function recipesController(recipeFactory, $window, $timeout){
 		self.recipes = response
 	})
 
-	self.addRecipe = function(name,cuisine,ingredients){
+	self.addRecipe = function(name,cuisine,ingredients, instructions){
 		var data = {name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
 		self.api.addRecipe(data).then(function success(response){
 			self.recipes.push(response.data.recipe)
@@ -41,7 +41,7 @@ function recipeDetailController(recipeFactory,$stateParams,$location){
 	}
 	self.showRecipe($stateParams.recipeId)
 
-	self.updateRecipe = function(recipeId, name, cuisine, ingredients){
+	self.updateRecipe = function(recipeId, name, cuisine, ingredients, instructions){
 		var data = {name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
 		self.api.updateRecipe(recipeId,data).success(function(response){
 			console.log(response)

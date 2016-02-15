@@ -1,16 +1,24 @@
 <div class="panel panel-default" ng-hide="recipeDetailsCtrl.editing">
 	<div class="panel-heading">
-		<h3 class="panel-title">Single Recipe:</h3>
+		<h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span></h3>
 	</div>
 	<div class="panel-body">
-		<h1><strong>{{ recipeDetailsCtrl.recipe.name }}</strong> - {{ recipeDetailsCtrl.recipe.cuisine }} <hr> {{ recipeDetailsCtrl.recipe.ingredients }} <hr> {{ recipeDetailsCtrl.recipe.instructions }}</h1>
-		
+		<h1><strong>{{ recipeDetailsCtrl.recipe.name }}</strong></h1>
+
+		<hr> 
+		<h3>{{ recipeDetailsCtrl.recipe.cuisine }}
+		<hr> 
+		You will need... <br><br> {{ recipeDetailsCtrl.recipe.ingredients }} 
+		<hr> {{ recipeDetailsCtrl.recipe.instructions }} </h3>
 	</div>
+
+<!-- 	edit and delete buttons -->
 	<div class="text-center">
-	<button class="btn btn-info btn-block" ng-click="recipeDetailsCtrl.editing=!recipeDetailsCtrl.editing">Edit Recipe</button>
-	<!-- DELETE BUTTON -->
-	<button class="btn btn-danger btn-block" ng-click="recipeDetailsCtrl.removeRecipe(recipeDetailsCtrl.recipe._id)">Delete Recipe</button>
-	<!--  -->
+	<button class="btn btn-info btn-block" ng-click="recipeDetailsCtrl.editing=!recipeDetailsCtrl.editing"><span class="glyphicon glyphicon-pencil"></span>&nbsp Edit</button>
+
+    <button class="btn btn-danger btn-block" ng-click="recipeDetailsCtrl.removeRecipe(recipeDetailsCtrl.recipe._id)">
+        <span class="glyphicon glyphicon-trash"></span> &nbsp Delete
+    </button>
 	</div>
 </div>
 

@@ -5,7 +5,8 @@ var
 var recipeSchema = new Schema({
 	name: String,
 	cuisine: String,
-    ingredients: String
+    ingredients: String,
+    instructions: String
 
 })
 
