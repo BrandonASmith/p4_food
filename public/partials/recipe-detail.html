@@ -1,32 +1,35 @@
-<div class="panel panel-default" ng-hide="recipeDetailCtrl.editing">
+<div class="panel panel-default" ng-hide="recipeDetailsCtrl.editing">
 	<div class="panel-heading">
 		<h3 class="panel-title">Single Recipe:</h3>
 	</div>
 	<div class="panel-body">
-		<h1><strong>{{ recipeDetailCtrl.recipe.name }}</strong> - {{ recipeDetailCtrl.recipe.cuisine }}<hr>{{ recipeDetailCtrl.recipe.ingredients }}</h1>
+		<h1><strong>{{ recipeDetailsCtrl.recipe.name }}</strong> - {{ recipeDetailsCtrl.recipe.cuisine }} <hr> {{ recipeDetailsCtrl.recipe.ingredients }} <hr> {{ recipeDetailsCtrl.recipe.instructions }}</h1>
 		
 	</div>
 	<div class="text-center">
-	<button class="btn btn-info btn-block" ng-click="recipeDetailCtrl.editing=!recipeDetailCtrl.editing">Edit Recipe</button>
+	<button class="btn btn-info btn-block" ng-click="recipeDetailsCtrl.editing=!recipeDetailsCtrl.editing">Edit Recipe</button>
 	<!-- DELETE BUTTON -->
-	<button class="btn btn-danger btn-block" ng-click="recipeDetailCtrl.removeRecipe(recipeDetailCtrl.recipe._id)">Delete Recipe</button>
+	<button class="btn btn-danger btn-block" ng-click="recipeDetailsCtrl.removeRecipe(recipeDetailsCtrl.recipe._id)">Delete Recipe</button>
 	<!--  -->
 	</div>
 </div>
 
-<div class="panel panel-default" ng-show="recipeDetailCtrl.editing">
-<!--<h3><strong>ID</strong>: {{ recipeDetailCtrl.recipe._id }}</h3>-->
+<div class="panel panel-default" ng-show="recipeDetailsCtrl.editing">
+<!-- <h3><strong>ID</strong>: {{ recipeDetailsCtrl.recipe._id }}</h3> -->
 	<div class="panel-heading"><h3 class="panel-title">Edit Recipe</h3></div>
 	<div class="panel-body">
-		<form class="" ng-submit="recipeDetailCtrl.updateRecipe(recipeDetailCtrl.recipe._id, recipeDetailCtrl.recipe.name, recipeDetailCtrl.recipe.cuisine, recipeDetailCtrl.recipe.ingredients)">
+		<form class="" ng-submit="recipeDetailsCtrl.updateRecipe(recipeDetailsCtrl.recipe._id, recipeDetailsCtrl.recipe.name, recipeDetailsCtrl.recipe.cuisine, recipeDetailsCtrl.recipe.ingredients, recipeDetailsCtrl.recipe.instructions)">
 			<div class="form-group">    
-		    	<input type="text" name="name" ng-model="recipeDetailCtrl.recipe.name" placeholder="name" class="form-control">
+		    	<input type="text" name="name" ng-model="recipeDetailsCtrl.recipe.name" placeholder="name" class="form-control">
 		    </div>
 			<div class="form-group">
-				<input type="text" name="cuisine" ng-model="recipeDetailCtrl.recipe.cuisine" placeholder="cuisine" class="form-control">
+				<input type="text" name="cuisine" ng-model="recipeDetailsCtrl.recipe.cuisine" placeholder="cuisine" class="form-control">
 			</div>
 			<div class="form-group">
-				<input type="text" name="ingredients" ng-model="recipeDetailCtrl.recipe.ingredients" placeholder="ingredients" class="form-control">
+				<TEXTAREA Name="content" ROWS=3 COLS=20 name="ingredients" ng-model="recipeDetailsCtrl.recipe.ingredients" placeholder="Ingredients" class="form-control"> </TEXTAREA>
+			</div>
+			<div class="form-group">
+				<TEXTAREA Name="content" ROWS=6 COLS=20 name="instructions" ng-model="recipeDetailsCtrl.recipe.instructions" placeholder="Instructions" class="form-control"> </TEXTAREA>
 			</div>
             
 			<div class="text-center">

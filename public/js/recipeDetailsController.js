@@ -3,33 +3,34 @@ angular.module('recipeApp')
 
 RecipeDetailsController.$inject = ['recipeFactory','$stateParams','$location']
 
-function RecipeDetailsController(carsFactory,$stateParams,$location){
+function RecipeDetailsController(recipeFactory,$stateParams,$location){
 	var vm = this
-	vm.name = 'Car Detail'
-	vm.api = carsFactory
-	vm.car = null
+	vm.name = 'Recipe Detail'
+	vm.api = recipeFactory
+	vm.recipe = null
 	vm.editing = false
-	vm.showCar = function(carId){
-		vm.api.show(carId).success(function(response){
-			vm.car = response
+	vm.showRecipe = function(recipeId){
+		vm.api.show(recipeId).success(function(response){
+			vm.recipe = response
 			console.log(response)
+			console.log("recipe:", vm.recipe)
 		})
 	}
-	vm.showCar($stateParams.carId)
+	vm.showRecipe($stateParams.recipeId)
 
-	vm.updateCar = function(carId, make, model, year){
-		var data = {make: make, model: model, year: year}
-		vm.api.updateCar(carId,data).success(function(response){
+	vm.updateRecipe = function(recipeId, name, cuisine, ingredients, instructions){
+		var data = {name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
+		vm.api.updateRecipe(recipeId,data).success(function(response){
 			console.log(response)
-			vm.car = response
+			vm.recipe = response
 			vm.editing = false
 		})
 	}
 
-	vm.removeCar = function(carId){
-		vm.api.removeCar(carId).success(function(response){
+	vm.removeRecipe = function(recipeId){
+		vm.api.removeRecipe(recipeId).success(function(response){
 			console.log(response)
-			$location.path('/cars')
+			$location.path('/recipes')
 		})
 	}
 }

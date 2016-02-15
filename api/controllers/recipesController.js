@@ -11,6 +11,7 @@ function createRecipe(req,res){
 	newRecipe.name = req.body.name
 	newRecipe.cuisine = req.body.cuisine
     newRecipe.ingredients = req.body.ingredients
+    newRecipe.instructions = req.body.instructions
 	newRecipe.save(function(err, recipe){
 		if(err) throw err
 		res.json({message: "Recipe Saved!", recipe: recipe})

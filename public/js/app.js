@@ -1,6 +1,14 @@
-angular.module('reviewApp', ['ui.router'])
+angular.module('recipeApp', ['ui.router'])
 	.directive('navBar', navBar)
 	.directive('recipeForm', recipeForm)
+	.filter('reverse', reverse)
+
+function reverse() {
+	return function(items) {
+		return items.slice().reverse();
+	};
+}
+
 
 function recipeForm(){
 	var directive = {

@@ -1,5 +1,5 @@
 angular.module('recipeApp')
-	.controller('recipesController', recipesController)
+	.controller('RecipesController', recipesController)
 	.controller('recipeDetailController', recipeDetailController)
     
     
@@ -18,7 +18,7 @@ function recipesController(recipeFactory, $window, $timeout){
 	})
 
 	self.addRecipe = function(name,cuisine,ingredients){
-		var data = {name: name, cuisine: cuisine, ingredients: ingredients}
+		var data = {name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
 		self.api.addRecipe(data).then(function success(response){
 			self.recipes.push(response.data.recipe)
 			self.newRecipe = {}
@@ -42,7 +42,7 @@ function recipeDetailController(recipeFactory,$stateParams,$location){
 	self.showRecipe($stateParams.recipeId)
 
 	self.updateRecipe = function(recipeId, name, cuisine, ingredients){
-		var data = {name: name, cuisine: cuisine, ingredients: ingredients}
+		var data = {name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
 		self.api.updateRecipe(recipeId,data).success(function(response){
 			console.log(response)
 			self.recipe = response

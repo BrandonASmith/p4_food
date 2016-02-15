@@ -8,9 +8,15 @@
 			<div class="form-group">
 				<input type="text" name="cuisine" ng-model="recipesCtrl.newRecipe.cuisine" placeholder="Cuisine" class="form-control">
 			</div>
+			
             <div class="form-group">
-				<input type="text" name="ingredients" ng-model="recipesCtrl.newRecipe.ingredients" placeholder="Ingredients" class="form-control">
+				<TEXTAREA Name="content" ROWS=3 COLS=20 name="ingredients" ng-model="recipesCtrl.newRecipe.ingredients" placeholder="Ingredients" class="form-control"> </TEXTAREA>
 			</div>
+			<div class="form-group">
+				<TEXTAREA Name="content" ROWS=6 COLS=20 name="instructions" ng-model="recipesCtrl.newRecipe.instructions" placeholder="Instructions" class="form-control"> </TEXTAREA>
+			</div>
+	
+	
 					<div class="text-center">
 			<button type="submit" class="btn btn-info btn-block">Add Recipe</button>
 			</div>
