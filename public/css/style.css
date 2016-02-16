@@ -1,0 +1,40 @@
+body {
+	background-image: url('assets/scallops.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.flag {
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.tron {
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.nav {
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	letter-spacing: 2px;
+
+}
+
+.list {
+	font-family: 'Lobster', cursive;
+	color: ##333;
+	letter-spacing: 2px;
+}
+
+.form {
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	letter-spacing: 2px;
+}

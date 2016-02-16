@@ -1,16 +1,30 @@
-<div ng-controller="UsersController as usersCtrl">
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-  <div class="navbar-header">
-    <a class="navbar-brand" ui-sref="home">Crumblr</a>
-  </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li ng-if="usersCtrl.loggedIn"><a>Hi {{usersCtrl.user.username}}</a></li>
-      <li ng-if="usersCtrl.loggedIn"><a ui-sref="recipes">Recipes</a></li> 
-      <li ng-if="!usersCtrl.loggedIn"><a ui-sref="login">Login</a></li>
-      <li ng-if="!usersCtrl.loggedIn"><a ui-sref="signup">Sign up </a></li>
-      <li ng-if="usersCtrl.loggedIn"><a ng-click="usersCtrl.logout()">Log out</a></li>  
-    </ul>
+<div class="container nav">
+
+  <div class="container flag">
+
+    <div ng-controller="UsersController as usersCtrl">
+      <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home">   Crumblr</a>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li ng-if="usersCtrl.loggedIn"><a> Hi {{usersCtrl.user.username}} <span class="glyphicon glyphicon-user"></span> </a></li>
+          
+          <li ng-if="usersCtrl.loggedIn"><a ui-sref="recipes"> Add Recipe <span class="glyphicon glyphicon-cutlery"></span> </a></li> 
+
+          <li ng-if="usersCtrl.loggedIn"><a ui-sref="myrecipes"> My Recipes <span class="glyphicon glyphicon-cutlery"></span> </a></li> 
+          
+          <li ng-if="!usersCtrl.loggedIn"><a ui-sref="login"> Login </a></li>
+          
+          <li ng-if="!usersCtrl.loggedIn"><a ui-sref="signup">Sign up <span class="glyphicon glyphicon-user"></span></a></li>
+          
+          <li ng-if="usersCtrl.loggedIn"><a ng-click    ="usersCtrl.logout()">Log out</a></li>  
+        </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 </div>
+
+
