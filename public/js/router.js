@@ -30,14 +30,14 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 			templateUrl: 'partials/home.html',
 			controller: 'UsersController as usersCtrl'
 		})
-		.state('myrecipes', {
+		.state('recipes', {
 			url: '/recipes',
 			templateUrl: 'partials/myrecipes.html',
 			controller: 'RecipesController as recipesCtrl'
 		})
-		.state('recipes', {
+		.state('addrecipe', {
 			url: '/addrecipe',
-			templateUrl: 'partials/recipe-list.html',
+			templateUrl: 'partials/recipe-form.html',
 			controller: 'RecipesController as recipesCtrl'
 		})
 

@@ -7,6 +7,7 @@ recipesController.$inject = ['recipeFactory', '$window']
 recipeDetailController.$inject = ['recipeFactory','$stateParams','$location']
 
 function recipesController(recipeFactory, $window, $timeout){
+	console.log('Recipes Controller is active')
 	var self = this
 	self.name = 'Recipe List'
 	self.api = recipeFactory
