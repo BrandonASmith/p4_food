@@ -21,7 +21,13 @@ body {
 	color: #66b3ff;
 	text-align: center;
 
+}
 
+.tron1 {
+	font-size: 60px;
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
 }
 
 .nav {
@@ -29,6 +35,7 @@ body {
 	font-family: 'Lobster', cursive;
 	color: #66b3ff;
 	letter-spacing: 2px;
+	margin-top: 10px;
 
 }
 
@@ -47,7 +54,6 @@ body {
 }
 
 .editer {
-	
 	font-family: "Raleway", Arial, sans-serif;
 
 }
@@ -57,7 +63,6 @@ body {
 	font-size: 150px;
 	font-family: 'Lobster', cursive;
 	color: #66b3ff;
-	
 	text-align: center;
 
 }
@@ -69,14 +74,27 @@ body {
 	text-align: center;
 }
 
-/*.login1 {
+.login1 {
 	font-family: 'Lobster', cursive;
 	color: #66b3ff;
 	text-align: left;
 	letter-spacing: 2px;
 
 }
-*/
+
+
+.navbar-nav>li>a {
+    padding-top: 11px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding-top: 15px;
+    padding: 15px 15px;
+    font-size: 30px;
+    line-height: 20px;
+}
 
 
 
