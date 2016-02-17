@@ -18,8 +18,10 @@ body {
 .tron {
 	
 	font-family: 'Lobster', cursive;
-	color: #66b3ff;
-	text-align: center;
+	color: red;
+	text-align: right;
+	padding: 0px 0px;
+
 
 }
 
@@ -42,7 +44,7 @@ body {
 .list {
 	
 	font-family: 'Lobster', cursive;
-	color: ##333;
+	color: #333;
 	letter-spacing: 2px;
 }
 
