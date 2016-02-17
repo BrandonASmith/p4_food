@@ -15,13 +15,14 @@ body {
 	letter-spacing: 2px;
 }
 
+
 .tron {
-	
+
 	font-family: 'Lobster', cursive;
-	color: red;
+	letter-spacing: 2px;
+	color: 	 #ffbf00;
 	text-align: right;
 	padding: 0px 0px;
-
 
 }
 
@@ -62,7 +63,7 @@ body {
 
 .logo {
 	
-	font-size: 150px;
+	font-size: 110px;
 	font-family: 'Lobster', cursive;
 	color: #66b3ff;
 	text-align: center;
@@ -104,9 +105,11 @@ body {
 }
 
 .homepage {
-	margin-top: 0px;
-}
 
+    margin-top: -20px;
+    margin-right: 423px;
+
+}
 /*experimenting with div shapes*/
 
 /*.list-group { 
