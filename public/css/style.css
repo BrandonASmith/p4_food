@@ -101,14 +101,15 @@ body {
 	margin-top: 0px;
 }
 
+/*experimenting with div shapes*/
 
-
-
-
-
-
-
-
+.list-group { 
+    width: 300px; 
+    height: 200px; 
+    margin: 50px;
+    position: relative;
+    text-align: center;
+}
 
 
 
