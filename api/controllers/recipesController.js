@@ -8,6 +8,7 @@ function getAllRecipes(req,res){
 
 function createRecipe(req,res){
 	var newRecipe = new Recipe
+	newRecipe.avatar_url = req.body.avatar_url
 	newRecipe.name = req.body.name
 	newRecipe.cuisine = req.body.cuisine
     newRecipe.ingredients = req.body.ingredients
