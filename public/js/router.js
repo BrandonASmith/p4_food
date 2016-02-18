@@ -41,6 +41,13 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 			controller: 'RecipesController as recipesCtrl'
 		})
 
+		
+		.state('featured', {
+			url: '/featured',
+			templateUrl: 'partials/featured.html',
+			controller: 'RecipesController as recipesCtrl'
+		})
+
 		.state('detail', {
 			url: '/recipes/:recipeId',
 			templateUrl: 'partials/recipe-detail.html',

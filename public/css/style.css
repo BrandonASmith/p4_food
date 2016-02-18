@@ -15,13 +15,14 @@ body {
 	letter-spacing: 2px;
 }
 
+
 .tron {
-	
+
 	font-family: 'Lobster', cursive;
-	color: red;
+	letter-spacing: 2px;
+	color: 	 #ffbf00;
 	text-align: right;
 	padding: 0px 0px;
-
 
 }
 
@@ -62,7 +63,7 @@ body {
 
 .logo {
 	
-	font-size: 150px;
+	font-size: 110px;
 	font-family: 'Lobster', cursive;
 	color: #66b3ff;
 	text-align: center;
@@ -104,9 +105,29 @@ body {
 }
 
 .homepage {
-	margin-top: 0px;
+
+    margin-top: -20px;
+    margin-right: 423px;
+
 }
 
+.video-container {
+	position:relative;
+	margin-bottom: 200px;
+	margin-top: 50px;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
 /*experimenting with div shapes*/
 
 /*.list-group { 
