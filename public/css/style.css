@@ -1,5 +1,122 @@
-.flag {
+body {
+	
+	background-image: url('assets/scallops.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+}
 
- background-image: url("../assets/")
+.flag {
+	
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.tron {
+	
+	font-family: 'Lobster', cursive;
+	color: red;
+	text-align: right;
+	padding: 0px 0px;
+
 
 }
+
+.tron1 {
+	font-size: 60px;
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
+}
+
+.nav {
+	
+	font-family: "Raleway", Arial, sans-serif;
+	color: #66b3ff;
+	letter-spacing: 2px;
+	margin-top: 10px;
+
+}
+
+.list {
+	
+	font-family: 'Lobster', cursive;
+	color: #333;
+	letter-spacing: 2px;
+}
+
+.form {
+	
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	letter-spacing: 2px;
+}
+
+.editer {
+	font-family: "Raleway", Arial, sans-serif;
+
+}
+
+.logo {
+	
+	font-size: 150px;
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
+	margin-bottom: 0px;
+
+}
+
+.login {
+
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: center;
+}
+
+.login1 {
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: left;
+	letter-spacing: 0px;
+
+}
+
+.form-control {
+	font-family: "Raleway", Arial, sans-serif;
+}
+
+
+.navbar-nav>li>a {
+    padding-top: 11px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding-top: 15px;
+    padding: 15px 15px;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.homepage {
+	margin-top: 0px;
+}
+
+/*experimenting with div shapes*/
+
+/*.list-group { 
+    width: 300px; 
+    height: 200px; 
+    margin: 50px;
+    position: relative;
+    text-align: center;
+}
+*/
+
+
+
