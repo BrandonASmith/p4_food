@@ -22,6 +22,7 @@ function createRecipe(req,res){
 function getOneRecipe(req,res){
 	Recipe.findById(req.params.id, function(err,recipe){
 		if(err) throw err
+			console.log( 'RES', recipe)
 		res.json(recipe)
 	})
 }

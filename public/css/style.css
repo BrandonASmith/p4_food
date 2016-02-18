@@ -138,7 +138,7 @@ body {
     width: 370px;
     float: left;
     display: block;
-    margin: 3px;
+    margin: 8px;
     border-radius: 10px;
     background: #fff url("assets/ramsay.jpg") 0 0 no-repeat;
     transition: background-image ease .6s;
