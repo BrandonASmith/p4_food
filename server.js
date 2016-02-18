@@ -8,7 +8,9 @@ var express 	= require('express'),
 	cors 		= require('cors'),
 	apiRouter 	= require('./api/routes/userRoutes')
 
-mongoose.connect('mongodb://localhost:27017/recipe-app')
+var mongoUri 	= process.env.MONGOLAB_URI || 'mongodb://localhost:27017/recipe-app'
+
+mongoose.connect(mongoUri)
 
 // set up middleware
 app.use(cors())
