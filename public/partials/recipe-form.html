@@ -4,13 +4,13 @@
 	
 	<div class="panel-heading"><h3 class="panel-title">Add A New Recipe</h3></div>
 	<div class="panel-body">
-		<form id="new-recipe-form" ng-submit="recipesCtrl.addRecipe(recipesCtrl.avatar_url, recipesCtrl.newRecipe.name,recipesCtrl.newRecipe.cuisine,recipesCtrl.newRecipe.ingredients, recipesCtrl.newRecipe.instructions)">
+		<form id="new-recipe-form" ng-submit="recipesCtrl.addRecipe(recipesCtrl.newRecipe.avatar_url, recipesCtrl.newRecipe.name,recipesCtrl.newRecipe.cuisine,recipesCtrl.newRecipe.ingredients, recipesCtrl.newRecipe.instructions)">
 			
 			<div class="form-group">
 				<input type="file" id="file_input" ng-model="recipesCtrl.newRecipe.avatar_url" ng-click="recipesCtrl.sthree()"/>
   				<p id="status">Please select a file</p>
   				<img class="img-responsive"  id="preview" src="" />
-				<input type="hidden" id="avatar_url" name="avatar_url" src="{{recipesCtrl.newRecipe.avatar_url}}" />
+				<input type="hidden" id="avatar_url" name="avatar_url" src="recipesCtrl.newRecipe.avatar_url" />
 			</div>
 
 			<div class="form-group">    

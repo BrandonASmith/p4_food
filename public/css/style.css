@@ -145,7 +145,7 @@ body {
 }
 
 .cell1:hover {
-    background: #ffa url("assets/frenchtoast.jpg") 0 0 no-repeat;
+    background: #ffa url("assets/pizza.jpg") 0 0 no-repeat;
 }
 
 .cell2 {
@@ -177,6 +177,31 @@ body {
 
 .cell3:hover {
     background: #ffa url("assets/pcs.jpg") 0 0 no-repeat;
+}
+
+.uploads {
+
+
+}
+
+.ramsay{
+
+	font-family: 'Lobster', cursive;
+	letter-spacing: 2px;
+	color: #66b3ff;
+	text-align: left;
+	margin-bottom: 0px;
+
+}
+
+
+
+.flay{
+	font-family: 'Lobster', cursive;
+	letter-spacing: 2px;
+	color: 	 #ffbf00;
+	text-align: right;
+	margin-bottom: 0px;
 }
 
 /*experimenting with div shapes*/
