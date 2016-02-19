@@ -189,7 +189,9 @@ body {
     background: #ffa url("assets/pcs.jpg") 0 0 no-repeat;
 }
 
-.uploads {
+.center-image{
+	text-align: center;
+	margin: 0 auto;
 
 
 }
