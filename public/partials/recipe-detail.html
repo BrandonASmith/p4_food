@@ -45,13 +45,6 @@
 	<div class="panel-body">
 		<form class="" ng-submit="recipeDetailsCtrl.updateRecipe(recipeDetailsCtrl.recipe._id, recipeDetailsCtrl.recipe.avatar_url, recipeDetailsCtrl.recipe.name, recipeDetailsCtrl.recipe.cuisine, recipeDetailsCtrl.recipe.ingredients, recipeDetailsCtrl.recipe.instructions)">
 			
-			<div class="form-group">
-				<input type="file" id="file_input" ng-model="recipesCtrl.newRecipe.avatar_url" ng-click="recipesCtrl.sthree()"/>
-  				<p id="status">Please select a file</p>
-  				<img class="img-responsive"  id="preview" src="" />
-				<input type="hidden" id="avatar_url" name="avatar_url" src="{{recipesCtrl.newRecipe.avatar_url}}" />
-			</div>
-
 
 			<div class="form-group">    
 		    	<input type="text" name="name" ng-model="recipeDetailsCtrl.recipe.name" placeholder="name" class="form-control">

@@ -18,8 +18,8 @@ function recipesController(recipeFactory, $window, $timeout){
 		self.recipes = response
 	})
 
-	self.addRecipe = function( name, cuisine, ingredients, instructions, avatar_url){
-		var data = { avatar_url: self.newRecipe.avatar_url, name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
+	self.addRecipe = function( avatar_url, name, cuisine, ingredients, instructions){
+		var data = { avatar_url: avatar_url, name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
 		self.api.addRecipe(data).then(function success(response){
 			self.recipes.push(response.data.recipe)
 			self.newRecipe = {}
