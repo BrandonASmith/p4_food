@@ -4,7 +4,7 @@ angular.module('recipeApp')
 recipeFactory.$inject = ['$http']
 
 function recipeFactory($http){
-	var recipesUrl = 'http://localhost:3000/api/recipes'
+	var recipesUrl = 'https://lit-inlet-27097.herokuapp.com/api/recipes'
 	var recipes = {}
 
 	recipes.list = function(){

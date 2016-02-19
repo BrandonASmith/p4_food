@@ -13,9 +13,9 @@ var express 	= require('express'),
 	AWS_SECRET_KEY 	= process.env.AWS_SECRET_KEY || auth.amazonAuth.clientSecret,
 	S3_BUCKET 	 	= process.env.S3_BUCKET || auth.amazonAuth.callBackURL;
 
-var mongoUri 	= process.env.MONGOLAB_URI || 'mongodb://localhost:27017/recipe-app'
+var mongoUri 	= process.env.MONGOLAB_URI || 'mongodb://localhost:27017/recipe-app';
 
-mongoose.connect(mongoUri)
+mongoose.connect(mongoUri);
 
 // set up middleware
 app.use(cors())

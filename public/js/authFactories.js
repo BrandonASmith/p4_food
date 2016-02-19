@@ -53,11 +53,11 @@ authFactory.$inject = ['$http', '$q', 'authTokenFactory', '$window']
 function authFactory($http, $q, authTokenFactory, $window){
 	var authFactory = {}
 	authFactory.index = function(){
-		return $http.get('http://localhost:3000/api/users')
+		return $http.get('https://lit-inlet-27097.herokuapp.com/api/users')
 	}
 	// handle login
 	authFactory.login = function(username, password){
-		return $http.post('http://localhost:3000/api/authenticate', {
+		return $http.post('https://lit-inlet-27097.herokuapp.com/api/authenticate', {
 			username: username,
 			password: password
 		}).then(function(response){
@@ -66,7 +66,7 @@ function authFactory($http, $q, authTokenFactory, $window){
 		})
 	}
 	authFactory.signup = function(username, password){
-		return $http.post('http://localhost:3000/api/users', {
+		return $http.post('https://lit-inlet-27097.herokuapp.com/api/users', {
 			username: username,
 			password: password
 		})
@@ -87,7 +87,7 @@ function authFactory($http, $q, authTokenFactory, $window){
 	authFactory.getUser = function(){
 		if(authTokenFactory.getToken()){
 			console.log("helloooo")
-			return $http.get('http://localhost:3000/api/me?token=' + $window.localStorage.getItem('token') )
+			return $http.get('https://lit-inlet-27097.herokuapp.com/api/me?token=' + $window.localStorage.getItem('token') )
 		} else {
 			return $q.reject({message: 'User has no token'})
 		}
