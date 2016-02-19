@@ -12,7 +12,7 @@ MEAN Stack, JS, CSS, HTML, Heroku, Git, Bootstrap.
 #Wireframes
 ## Login Page
 
-![](wireframes/login.jpg)
+![](wireframes/Login.jpg)
 
 ## Home Page
 
