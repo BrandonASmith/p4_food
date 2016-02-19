@@ -18,8 +18,8 @@ function RecipeDetailsController(recipeFactory,$stateParams,$location){
 	}
 	vm.showRecipe($stateParams.recipeId)
 
-	vm.updateRecipe = function(recipeId, name, cuisine, ingredients, instructions){
-		var data = {name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
+	vm.updateRecipe = function(recipeId, avatar_url, name, cuisine, ingredients, instructions){
+		var data = {avatar_url: avatar_url, name: name, cuisine: cuisine, ingredients: ingredients, instructions: instructions}
 		vm.api.updateRecipe(recipeId,data).success(function(response){
 			console.log(response)
 			vm.recipe = response

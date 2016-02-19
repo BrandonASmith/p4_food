@@ -6,9 +6,12 @@
 		<h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span></h3>
 	</div>
 	
+	<img class="img-responsive" src="{{recipeDetailsCtrl.recipe.avatar_url}}"/>
 	
+
 	<div class="panel-body">
 		<h1><strong>{{ recipeDetailsCtrl.recipe.name }}</strong></h1>
+
 
 	<div class="editer">
 		<hr> 
@@ -17,22 +20,23 @@
 		You will need... <br><br> {{ recipeDetailsCtrl.recipe.ingredients }} 
 		<hr> {{ recipeDetailsCtrl.recipe.instructions }} </h3>
 	</div>
-	</div>
+</div>
 
 <!-- 	edit and delete buttons -->
-	<div class="text-center">
+<div class="text-center">
+<!-- 
+	<div class="video-container" align="center">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/3JcmQONgXJM?list=PLxc_j9LB6m5vXyGOTbj9kTsvyzI7lYoek" frameborder="0" allowfullscreen>	
+		</iframe>
+	</div>  -->
+
 	<button class="btn btn-info btn-block" ng-click="recipeDetailsCtrl.editing=!recipeDetailsCtrl.editing"><span class="glyphicon glyphicon-pencil"></span>&nbsp Edit</button>
 
     <button class="btn btn-danger btn-block" ng-click="recipeDetailsCtrl.removeRecipe(recipeDetailsCtrl.recipe._id)">
         <span class="glyphicon glyphicon-trash"></span> &nbsp Delete
     </button>
+	
 	</div>
-</div>
-
-
-<!-- playlist -->
-<div class="video-container" align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3JcmQONgXJM?list=PLxc_j9LB6m5vXyGOTbj9kTsvyzI7lYoek" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
@@ -40,7 +44,9 @@
 <!-- <h3><strong>ID</strong>: {{ recipeDetailsCtrl.recipe._id }}</h3> -->
 	<div class="panel-heading"><h3 class="panel-title">Edit Recipe</h3></div>
 	<div class="panel-body">
-		<form class="" ng-submit="recipeDetailsCtrl.updateRecipe(recipeDetailsCtrl.recipe._id, recipeDetailsCtrl.recipe.name, recipeDetailsCtrl.recipe.cuisine, recipeDetailsCtrl.recipe.ingredients, recipeDetailsCtrl.recipe.instructions)">
+		<form class="" ng-submit="recipeDetailsCtrl.updateRecipe(recipeDetailsCtrl.recipe._id, recipeDetailsCtrl.recipe.avatar_url, recipeDetailsCtrl.recipe.name, recipeDetailsCtrl.recipe.cuisine, recipeDetailsCtrl.recipe.ingredients, recipeDetailsCtrl.recipe.instructions)">
+			
+
 			<div class="form-group">    
 		    	<input type="text" name="name" ng-model="recipeDetailsCtrl.recipe.name" placeholder="name" class="form-control">
 		    </div>

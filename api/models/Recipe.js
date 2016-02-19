@@ -3,6 +3,7 @@ var
 	Schema = mongoose.Schema
 
 var recipeSchema = new Schema({
+	avatar_url: String,
 	name: String,
 	cuisine: String,
     ingredients: String,

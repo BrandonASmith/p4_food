@@ -1,4 +1,4 @@
-angular.module('recipeApp', ['ui.router'])
+angular.module('recipeApp', ['ui.router', 'ui.bootstrap'])
 	.directive('navBar', navBar)
 	.directive('recipeForm', recipeForm)
 	.filter('reverse', reverse)
