@@ -54,6 +54,19 @@ function MainRouter($stateProvider, $urlRouterProvider) {
 
 		})
 
+		.state('giada', {
+			url: '/giada',
+			templateUrl: 'partials/giada.html',
+
+		})
+
+		.state('flay', {
+			url: '/flay',
+			templateUrl: 'partials/flay.html',
+
+		})
+
+
 		.state('detail', {
 			url: '/recipes/:recipeId',
 			templateUrl: 'partials/recipe-detail.html',
