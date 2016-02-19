@@ -71,6 +71,16 @@ body {
 
 }
 
+.logo1 {
+	
+	font-size: 110px;
+	font-family: 'Lobster', cursive;
+	color: #66b3ff;
+	text-align: right-center;
+	margin-bottom: 0px;
+
+}
+
 .login {
 
 	font-family: 'Lobster', cursive;
@@ -145,7 +155,7 @@ body {
 }
 
 .cell1:hover {
-    background: #ffa url("assets/pizza.jpg") 0 0 no-repeat;
+    background: #ffa url("assets/maple.jpg") 0 0 no-repeat;
 }
 
 .cell2 {
@@ -184,25 +194,16 @@ body {
 
 }
 
-.ramsay{
+.chef{
 
 	font-family: 'Lobster', cursive;
 	letter-spacing: 2px;
 	color: #66b3ff;
-	text-align: left;
+	text-align: right-center;
 	margin-bottom: 0px;
 
 }
 
-
-
-.flay{
-	font-family: 'Lobster', cursive;
-	letter-spacing: 2px;
-	color: 	 #ffbf00;
-	text-align: right;
-	margin-bottom: 0px;
-}
 
 /*experimenting with div shapes*/
 
